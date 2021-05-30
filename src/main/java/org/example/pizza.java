@@ -1,8 +1,6 @@
 package org.example;
 import java.util.Scanner;
 
-/* based on the example given, I am assuming there are 8 slices per pizza. */
-
 public class pizza {
     public static void main(String[] args){
         Scanner input = new Scanner (System.in);
