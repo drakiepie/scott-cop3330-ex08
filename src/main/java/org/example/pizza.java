@@ -10,10 +10,11 @@ public class pizza {
         int numPeople = input.nextInt();
         System.out.print("How many pizza do you have? ");
         int numPizza = input.nextInt();
-        System.out.println(numPeople + " people with " + numPizza + " pizzas.");
+        System.out.print("How many slices per pizza? ");
+        int slicePer = input.nextInt();
+        int totalSlice = slicePer * numPizza;
+        System.out.println(numPeople + " people with " + numPizza + " pizzas. (" + totalSlice + " slices).");
 
-        //assuming 8 slices per pizza + initializing variables for amount of slices everybody gets and remainder.
-        int totalSlice = 8 * numPizza;
         int pizzaHaul, leftover;
 
         //if there is no remainder, the leftover will be 0.
